@@ -1,0 +1,83 @@
+body{
+    align-self: center;
+}
+.container {
+    padding: 0px;
+    position: fixed;
+    background-image: url("../imgs/tutorias.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.prueba{
+    background-color: white;
+}
+h4{ 
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+*{
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+ }
+ 
+main {
+    padding-top: 0px; /* Relleno superior igual a la altura de la cabecera*/
+    background-color: white;
+    display: flex;  
+    flex-flow: column;
+
+}
+    header {
+        background-color: white;
+        display: flex;
+        flex-flow: column;  
+    }
+        header>div, section>div, footer>nav {
+            /*background-color:  #F2F9F1;*/
+            background-color: white;
+            text-align: center;
+        }
+    section {
+        background-color: white;
+        display: flex;
+        flex-direction: row;        
+    }
+  div.contenido{
+            flex:1 1 auto;
+            font: bold 100px remachine;
+            text-align: center;
+            color: #3060FE;
+            letter-spacing: 10px;
+
+        }
+            
+    footer {
+        background-color: white;
+        display: flex;
+        flex-direction: row;    
+        justify-content: center;
+    }
+        footer>nav {
+            width: 99%;
+        }
+
+
+@font-face {
+        font-family: 'remachine';
+        src: url('../fonts/jurassic.ttf');
+}
+@media all and (max-width: 800px) {
+    section{
+        flex-direction: column;
+    }
+}

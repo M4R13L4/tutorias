@@ -1,0 +1,140 @@
+
+@font-face {
+        font-family: 'hotel';
+        src: url('../fonts/hotel.ttf');
+}
+@font-face {
+    font-family: 'jurassic';
+    src: url('../fonts/jurassic.ttf');
+}
+
+
+@font-face {
+    font-family: 'drift';
+    src: url('../fonts/drift.ttf');
+}
+
+
+
+.titulo{
+    color: darkred;
+    text-align: center;
+    font: bold 80px drift;
+    text-shadow: rgb(100,100,150) 3px 3px 5px;
+}
+h6{
+    color: white;
+}
+h2{
+    text-align: center;
+}
+
+input[type="number"] {
+   width:20px;
+}
+
+
+ *{
+    padding: 5px;
+    margin: 0px;
+    box-sizing: border-box;
+ }
+main {
+    padding-top: 0px; /* Relleno superior igual a la altura de la cabecera*/
+    background-color: white;
+    display: flex;  
+    flex-flow: column nowrap;
+}
+    header {
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+        display: flex;
+        flex-flow: column;  
+    }
+        header>div, section>div,  section>aside, footer>nav {
+            /*background-color:  #F2F9F1;*/
+            background-color: white;
+            text-align: center;
+        }
+
+        div.menu {      
+            display: flex;
+            flex-wrap: nowrap;
+            flex-flow: row; 
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+    
+    section {
+        background-color: white;
+        display: flex;
+        flex-direction: row;        
+    }
+        div.contenido{
+            flex:1 1 auto;
+            font: bold 60px jurassic;
+            text-align: center;
+            color: #F1B235;
+            letter-spacing: 6px;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+div.newopcs{
+    text-align: center;
+    align-items: center;
+    align-items: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+th, td {
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    border-style:  1px solid white;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+    border-style:  1px solid white;
+}
+
+form.agregar{
+margin:  0 auto;
+padding-left: 200;
+text-align: center;
+}
+form.inter{
+margin:  0 auto;
+padding-left: 200;
+text-align: center;
+width: 500px;
+}
+input.nota{
+    border-color: #058C9D;
+    text-align: center;
+    width: 700px;
+    height: 100px;
+}
+input[type=text]{
+    border-color: #058C9D;
+    margin: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+input[type=submit]{
+    background-color: #F38B15;
+    margin: 5px;
+    padding: 2px;
+}
+input[type=number]{
+    margin: 5px;
+    width: 100px;
+    border-color: #058C9D;
+}
